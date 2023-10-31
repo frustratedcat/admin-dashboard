@@ -7,6 +7,12 @@
 
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/0b64f17ecf.js"
       crossorigin="anonymous"
@@ -17,87 +23,82 @@
   <body>
     <div class="body-container grid-outer">
       <section class="grid-outer-first">
-        <h1>Dashboard</h1>
-        <nav>
+        <h1 class="grid-outer-first-h1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="30"
+            height="auto"
+          >
+            <title>view-dashboard</title>
+            <path
+              d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"
+            />
+          </svg>
+          <span class="h1-span">Dashboard</span>
+        </h1>
+
+        <nav class="grid-outer-first-nav">
           <ul>
             <li>
-              <a href="#" alt="Link to home page" id="a-home" class="icons"
-                >Home</a
-              >
+              <a href="#" alt="Link to home page" class="grid-li">
+                <span id="a-home" class="icons"></span>
+                <span class="li-span">Home</span>
+              </a>
             </li>
             <li>
-              <a
-                href="#"
-                alt="Link to profile page"
-                id="a-profile"
-                class="icons"
-                >Profile</a
-              >
+              <a href="#" alt="Link to profile page" class="grid-li">
+                <span id="a-profile" class="icons"></span>
+                <span class="li-span">Profile</span>
+              </a>
             </li>
             <li>
-              <a
-                href="#"
-                alt="Link to messages page"
-                id="a-messages"
-                class="icons"
-                >Messages</a
-              >
+              <a href="#" alt="Link to messages page" class="grid-li">
+                <span id="a-messages" class="icons"></span>
+                <span class="li-span">Messages</span>
+              </a>
             </li>
             <li>
-              <a
-                href="#"
-                alt="Link to history page"
-                id="a-history"
-                class="icons"
-                >History</a
-              >
+              <a href="#" alt="Link to history page" class="grid-li">
+                <span id="a-history" class="icons"></span>
+                <span class="li-span">History</span>
+              </a>
             </li>
             <li>
-              <a href="#" alt="Link to taks page" id="a-tasks" class="icons"
-                >Tasks</a
-              >
+              <a href="#" alt="Link to taks page" class="grid-li">
+                <span id="a-tasks" class="icons"></span>
+                <span class="li-span">Tasks</span>
+              </a>
             </li>
             <li>
-              <a
-                href="#"
-                alt="Link to communities page"
-                id="a-communities"
-                class="icons"
-                >Communities</a
-              >
+              <a href="#" alt="Link to communities page" class="grid-li">
+                <span id="a-communities" class="icons"></span>
+                <span class="li-span">Communities</span>
+              </a>
             </li>
             <li>
-              <a
-                href="#"
-                alt="Link to settings page"
-                id="a-settings"
-                class="icons"
-                >Settings</a
-              >
+              <a href="#" alt="Link to settings page" class="grid-li">
+                <span id="a-settings" class="icons"></span>
+                <span class="li-span">Settings</span>
+              </a>
             </li>
             <li>
-              <a
-                href="#"
-                alt="Link to support page"
-                id="a-support"
-                class="icons"
-                >Support</a
-              >
+              <a href="#" alt="Link to support page" class="grid-li">
+                <span id="a-support" class="icons"></span>
+                <span class="li-span">Support</span>
+              </a>
             </li>
             <li>
-              <a
-                href="#"
-                alt="Link to privacy policy page"
-                id="a-privacy"
-                class="icons"
-                >Privacy</a
-              >
+              <a href="#" alt="Link to privacy policy page" class="grid-li">
+                <span id="a-privacy" class="icons"></span>
+                <span class="li-span">Privacy</span>
+              </a>
             </li>
           </ul>
         </nav>
       </section>
 
-      <section class="grid-outer-second">
+      <header class="grid-outer-second">
         <div>Search Bar</div>
         <button type="button">dark/light button</button>
         <a
@@ -114,7 +115,7 @@
         <button type="button">New</button>
         <button type="button">Upload</button>
         <button type="button">Share</button>
-      </section>
+      </header>
 
       <main class="grid-outer-third">
         <article>
@@ -127,8 +128,7 @@
               src="./img/frustratedcat-rock-paper-scissors-screenshot.png"
               alt="Image of frustratedcat's rock, paper, scissors game"
               width="400px"
-            />Rock paper scissors</a
-          >
+          /></a>
           <a
             href="https://frustratedcat.github.io/etch-a-sketch/"
             alt="Link to frustratedcat's etch-a-sketch"
@@ -137,8 +137,7 @@
               src="./img/frustratedcat-etch-a-sketch-screenshot.png"
               alt="Image of frustratedcat's etch-a-sketch"
               width="400px"
-            />Etch-A-Sketch</a
-          >
+          /></a>
           <a
             href="https://frustratedcat.github.io/calculator/"
             alt="Link to frustratedcat's calculator"
@@ -148,8 +147,7 @@
               alt="Image
             of frustratedcat's calculator"
               width="400px"
-            />calculator</a
-          >
+          /></a>
           <a
             href="https://frustratedcat.github.io/sign-up-form/index.html"
             alt="Link to frustratedcat's sign-up-form"
@@ -158,11 +156,11 @@
               src="./img/frustratedcat-sign-up-screenshot.png"
               alt="Image of frustratedcat's sign up form"
               width="400px"
-            />Sign Up Form
+            />
           </a>
         </article>
 
-        <section>
+        <aside>
           <h3>Announcements</h3>
           <div>
             <h4>Site Maintenance</h4>
@@ -185,7 +183,7 @@
               ratione inventore!
             </p>
           </div>
-        </section>
+        </aside>
 
         <section>
           <h3>Trending</h3>
