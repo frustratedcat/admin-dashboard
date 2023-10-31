@@ -1,3 +1,8 @@
+:root {
+  --font-awesome-solid: 900;
+  --font-awesome-regular: 400;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,4 +11,62 @@
 
 .body-container {
   height: 100vh;
+}
+
+.icons::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+}
+
+#a-home::before {
+  content: "\f015";
+  font-weight: var(--font-awesome-solid);
+}
+
+#a-profile::before {
+  content: "\f2bb";
+  font-weight: var(--font-awesome-regular);
+}
+
+#a-messages::before {
+  content: "\f27a";
+  font-weight: var(--font-awesome-solid);
+}
+
+#a-history::before {
+  content: "\f017";
+  font-weight: var(--font-awesome-solid);
+}
+
+#a-tasks::before {
+  content: "\f249";
+  font-weight: var(--font-awesome-solid);
+}
+
+#a-communities::before {
+  content: "\f0c0";
+  font-weight: var(--font-awesome-solid);
+}
+
+#a-settings::before {
+  content: "\f013";
+  font-weight: var(--font-awesome-solid);
+}
+
+#a-support::before {
+  content: "\3f";
+  font-weight: var(--font-awesome-solid);
+}
+
+#a-privacy::before {
+  content: "\e572";
+  font-weight: var(--font-awesome-solid);
+}
+
+#a-github::before {
+  content: "\f09b";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: var(--font-awesome-solid);
 }
