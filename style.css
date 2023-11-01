@@ -178,7 +178,7 @@ a:visited {
 .github-project-link {
   height: 30px;
   width: 30px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--header-search-bar-color-light);
 }
 
@@ -187,8 +187,8 @@ a:visited {
   color: var(--left-column-color-hover-light);
 }
 
-.dark-light-btn {
-  margin-right: 10px;
+.github-project-link {
+  margin: 0 15px;
 }
 
 .header-second-row {
@@ -216,7 +216,6 @@ a:visited {
 }
 
 .profile-pic {
-  margin-right: 10px;
   height: 30px;
   width: 30px;
   object-fit: cover;
@@ -226,6 +225,7 @@ a:visited {
 }
 
 .header-h1 {
+  margin-left: 10px;
   font-size: 1.5rem;
 }
 
