@@ -9,7 +9,7 @@
   padding: 0;
 }
 
-.html {
+html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -33,23 +33,37 @@
 
 .grid-outer-first-h1,
 .grid-outer-first-nav {
-  margin: 20px 0 0 20px;
+  margin-left: 20px;
 }
 
 .grid-outer-first-h1 {
-  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.grid-outer-first-h1 {
+  font-size: 1.6rem;
   font-weight: 900;
   display: flex;
   align-items: center;
 }
 
 .h1-span {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
-.grid-li {
-  display: grid;
-  grid-template-columns: 30px 1fr;
+.nav-a-flex {
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.li-span {
+  font-weight: 500;
+  margin: 0 0 10px 10px;
+}
+
+.nav-a-settings {
+  margin-top: 30px;
 }
 
 .grid-outer-second {
@@ -77,6 +91,9 @@ a {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 6 Free";
+  width: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 #a-home::before {
