@@ -6,6 +6,8 @@
   --left-column-color-hover-light: #1c7ed6;
   --left-column-color-active-light: #f8f9fa;
   --header-background-light: #f8f9fa;
+  --header-search-bar-background-light: #e9ecef;
+  --header-search-bar-color-light: #212529;
 }
 
 * {
@@ -17,6 +19,16 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+}
+
+.icons::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  width: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .body-container {
@@ -96,22 +108,71 @@ a:visited {
   background-color: var(--header-background-light);
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.header-first-row {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.search-bar-container {
+  margin-left: 20px;
+}
+
+.search-bar-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-bar-icon::before {
+  content: "\f002";
+  font-weight: var(--font-awesome-solid);
+}
+
+.search-bar-btn-styling {
+  background-color: var(--header-search-bar-background-light);
+  color: var(--header-search-bar-color-light);
+  font-size: 1rem;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 2px solid var(--header-search-bar-color-light);
+  border-radius: 100px;
+}
+
+.search-bar-btn-styling:active {
+  background-color: var(--header-search-bar-color-light);
+  color: var(--header-search-bar-background-light);
+}
+
+.search-bar {
+  background-color: var(--header-search-bar-background-light);
+  color: var(--header-search-bar-color-light);
+  font-weight: 500;
+  width: 80%;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: 2px solid var(--header-search-bar-color-light);
+  border-radius: 100px;
+}
+
+.header-second-row {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .grid-outer-third {
   background-color: yellow;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-}
-
-.icons::before {
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 6 Free";
-  width: 30px;
-  display: flex;
-  justify-content: center;
 }
 
 #a-home::before {
