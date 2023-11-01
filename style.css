@@ -167,6 +167,38 @@ a:visited {
 .header-second-row {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  margin: 10px 0 0 20px;
+}
+
+.header-img-h1-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-profile-a {
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  object-position: 100% 0;
+  border: 1px solid var(--left-column-color-hover-light);
+  border-radius: 100px;
+}
+
+.header-h1 {
+  font-size: 1.5rem;
+  color: var(--header-search-bar-color-light);
+}
+
+.header-h1:hover {
+  color: var(--left-column-color-hover-light);
 }
 
 .grid-outer-third {
