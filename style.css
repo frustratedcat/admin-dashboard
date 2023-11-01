@@ -164,6 +164,30 @@ a:visited {
   border-radius: 100px;
 }
 
+.dark-light-btn-container {
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dark-light-btn,
+.github-project-link {
+  height: 30px;
+  width: 30px;
+  font-size: 1.5rem;
+  color: var(--header-search-bar-color-light);
+}
+
+.dark-light-btn:hover,
+.github-project-link:hover {
+  color: var(--left-column-color-hover-light);
+}
+
+.dark-light-btn {
+  margin-right: 10px;
+}
+
 .header-second-row {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -180,6 +204,7 @@ a:visited {
   flex-shrink: 1;
   display: flex;
   align-items: center;
+  color: var(--header-search-bar-color-light);
 }
 
 .profile-pic {
@@ -194,11 +219,6 @@ a:visited {
 
 .header-h1 {
   font-size: 1.5rem;
-  color: var(--header-search-bar-color-light);
-}
-
-.header-h1:hover {
-  color: var(--left-column-color-hover-light);
 }
 
 .grid-outer-third {
@@ -255,5 +275,10 @@ a:visited {
 #a-github::before {
   content: "\f09b";
   font-family: "Font Awesome 6 Brands";
+  font-weight: var(--font-awesome-solid);
+}
+
+#dark-light-btn::before {
+  content: "\f186";
   font-weight: var(--font-awesome-solid);
 }
