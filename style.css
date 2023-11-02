@@ -311,6 +311,11 @@ a:visited {
   height: 200px;
   object-fit: cover;
   object-position: 50% 50%;
+  transition: transform 0.2s;
+}
+
+.main-img:hover {
+  transform: scale(1.2);
 }
 
 .main-aside {
