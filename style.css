@@ -215,6 +215,11 @@ a:visited {
   color: var(--header-search-bar-color-light);
 }
 
+.header-profile-a:active,
+.header-profile-a:visited {
+  color: var(--header-search-bar-color-light);
+}
+
 .profile-pic {
   height: 30px;
   width: 30px;
