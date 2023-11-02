@@ -229,6 +229,40 @@ a:visited {
   font-size: 1.5rem;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  padding: 5px;
+  margin-left: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--header-search-bar-color-light);
+  background-color: var(--header-background-light);
+  border: 2px solid var(--header-search-bar-color-light);
+  border-radius: 10px;
+}
+
+.btn:hover {
+  color: var(--left-column-color-hover-light);
+  border-color: var(--left-column-color-hover-light);
+}
+
+.btn:active {
+  color: var(--header-background-light);
+  background-color: var(--header-search-bar-color-light);
+  border-color: var(--header-background-light);
+}
+
 .grid-outer-third {
   background-color: yellow;
   grid-column: 2 / 3;
