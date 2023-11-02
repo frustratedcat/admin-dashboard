@@ -308,6 +308,35 @@ a:visited {
   object-position: 50% 50%;
 }
 
+.main-aside {
+  margin: 20px 50px 0 0;
+  color: var(--header-search-bar-color-light);
+}
+
+.aside-h3 {
+  color: var(--header-background-light);
+  font-size: 1.5rem;
+}
+
+.section-announcements {
+  margin-bottom: 20px;
+}
+
+.aside-section-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--left-column-background-light);
+  border-radius: 10px;
+}
+
+.aside-item-container {
+  margin-bottom: 5px;
+}
+
+.aside-item-h4 {
+  margin-bottom: 5px;
+}
+
 #a-home::before {
   content: "\f015";
   font-weight: var(--font-awesome-solid);
@@ -362,4 +391,15 @@ a:visited {
 #dark-light-btn::before {
   content: "\f186";
   font-weight: var(--font-awesome-solid);
+}
+
+footer {
+  background-color: var(--header-search-bar-color-light);
+  color: var(--header-background-light);
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
