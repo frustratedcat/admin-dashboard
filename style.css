@@ -264,9 +264,48 @@ a:visited {
 }
 
 .grid-outer-third {
-  background-color: yellow;
+  background-color: var(--left-column-color-hover-light);
+  color: var(--header-background-light);
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main-article-container {
+  margin: 20px;
+}
+
+.main-img-container-outer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-img-container {
+  margin: 20px 20px 0 0;
+  width: 350px;
+  height: 200px;
+  border: 2px solid var(--header-search-bar-color-light);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-img-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 200px;
+}
+
+.main-img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 #a-home::before {
